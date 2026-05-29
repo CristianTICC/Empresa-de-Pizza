@@ -1,4 +1,8 @@
-/* Container Geral */
+/* ==========================================================================
+   CONFIGURAÇÕES GERAIS E LAYOUT
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 .sobre-container {
     max-width: 1200px;
     margin: 40px auto;
@@ -7,86 +11,107 @@
     color: #333;
 }
 
-/* Banner de Entrada */
+/* ==========================================================================
+   BANNER DE ENTRADA (HERO) - Ajuste para alinhar à esquerda
+   ========================================================================== */
 .sobre-hero {
-    text-align: center;
-    margin-bottom: 60px;
-    background: linear-gradient(135deg, #ffc107, #ff1a1a);
-    padding: 60px 20px;
+    text-align: left; /* Garante que o texto de introdução fique na esquerda */
+    margin-bottom: 40px;
+    background: linear-gradient(135deg, #fff9e6, #ffe699); /* Fundo em tom amarelo suave */
+    padding: 50px 20px;
     border-radius: 15px;
-    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .sobre-hero h1 {
     font-size: 3rem;
+    color: #8B0000; /* Vermelho Escuro */
     margin-bottom: 15px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    font-weight: 700;
 }
 
 .sobre-hero p {
     font-size: 1.2rem;
-    max-width: 60px;
-    margin: 0 auto;
-    opacity: 0.9;
+    color: #5a0000; /* Vermelho escuro sutil */
+    max-width: 700px; /* Impede o texto de introdução de ficar muito largo */
+    margin: 0; /* Alinha a introdução à esquerda */
+    line-height: 1.6;
 }
 
-/* Bloco História */
-.sobre-bloco {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    margin-bottom: 70px;
-}
-
-.sobre-texto {
-    flex: 1;
-}
-
-.sobre-texto h2 {
-    font-size: 2.2rem;
-    color: #ff1a1a;
-    margin-bottom: 20px;
-}
-
-.sobre-texto p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 15px;
-    text-align: justify;
-}
-
-.sobre-imagem {
-    flex: 1;
-    text-align: center;
-}
-
-.sobre-imagem img {
-    max-width: 80%;
+/* ==========================================================================
+   NOVO BLOCO DA HISTÓRIA (TEXTO À ESQUERDA, IMAGEM À DIREITA)
+   ========================================================================== */
+.bloco-historia {
+    background: linear-gradient(135deg, #fff9e6, #ffe699); /* Amarelo degradê igual ao print */
+    padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    max-width: 1000px;
+    margin: 40px auto;
+    
+    /* FAZ A MÁGICA: Habilita Flexbox para colocar lado a lado */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o texto e a imagem */
+    justify-content: space-between; /* Empurra o texto para a esquerda e imagem para a direita */
+    gap: 40px; /* Cria um espaço entre o texto e a imagem */
+}
+
+.historia-conteudo {
+    flex: 1.2; /* Dá um pouco mais de espaço para a coluna de texto */
+}
+
+.bloco-historia h2 {
+    color: #8B0000; /* Vermelho escuro */
+    font-size: 2.4rem;
+    text-align: left; /* Título centralizado */
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.bloco-historia p {
+    color: #5a0000; /* Vermelho escuro suave para leitura */
+    font-size: 1.15rem;
+    line-height: 1.8;
+    text-align: justify; /* Texto justificado nas laterais */
+    margin: 0;
+}
+
+.historia-imagem {
+    flex: 0.8; /* Ajusta o tamanho da área da imagem */
+    text-align: center; /* Centraliza a logo dentro da sua própria coluna */
+}
+
+.historia-imagem img {
+    max-width: 100%; /* Permite que a imagem preencha sua coluna */
+    max-height: 280px; /* Limita a altura para que a logo não fique gigante */
+    object-fit: contain; /* Garante que a logo não distorça */
+    border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
-.sobre-imagem img:hover {
-    transform: scale(1.03);
+.historia-imagem img:hover {
+    transform: scale(1.04); /* Pequeno efeito de zoom no hover */
 }
 
-/* Grid de Valores e Pilares */
+/* ==========================================================================
+   GRID DOS TRÊS PILARES (VALORES)
+   ========================================================================== */
 .sobre-valores {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .sobre-valores h2 {
     font-size: 2.2rem;
-    margin-bottom: 40px;
-    color: #333;
+    margin-bottom: 35px;
+    color: #8B0000;
+    font-weight: 600;
 }
 
 .valores-grid {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 25px;
 }
 
 .valor-card {
@@ -94,9 +119,9 @@
     padding: 35px 25px;
     border-radius: 12px;
     flex: 1;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    border-top: 5px solid #ffc107;
-    transition: translateY 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    border-top: 5px solid #ff1a1a;
+    transition: transform 0.3s ease;
 }
 
 .valor-card:hover {
@@ -111,28 +136,39 @@
 
 .valor-card h3 {
     font-size: 1.4rem;
+    color: #8B0000;
     margin-bottom: 10px;
 }
 
 .valor-card p {
-    font-size: 0.95rem;
-    color: #666;
-    line-height: 1.5;
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+    text-align: justify;
 }
 
-/* Responsividade para Celulares */
+/* ==========================================================================
+   RESPONSIVIDADE (MOBILE-FIRST PARA CELULARES)
+   ========================================================================== */
 @media (max-width: 768px) {
-    .sobre-bloco {
-        flex-direction: column;
-        gap: 30px;
+    .bloco-historia {
+        flex-direction: column-reverse; /* No celular, a imagem vai para cima ou para baixo do texto de forma organizada */
+        gap: 25px;
+        padding: 30px 20px;
+        text-align: center;
     }
-    
+
+    .bloco-historia h2 {
+        text-align: center; /* Centraliza o título apenas no celular */
+        font-size: 2rem;
+    }
+
+    .sobre-hero h1 {
+        font-size: 2.2rem;
+    }
+
     .valores-grid {
         flex-direction: column;
         gap: 20px;
-    }
-    
-    .sobre-hero h1 {
-        font-size: 2.2rem;
     }
 }
