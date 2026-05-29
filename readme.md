@@ -5,7 +5,7 @@ Sistema web desenvolvido para uma pizzaria, permitindo cadastro de clientes, log
 ## 🚀 Demonstração
 
 ### Front-end
-https://isack2022.github.io/Pizzaria-Imperio/index.html
+https://cristianticc.github.io/Empresa-de-Pizza/
 
 ### API
 https://node-pizzaria.onrender.com
