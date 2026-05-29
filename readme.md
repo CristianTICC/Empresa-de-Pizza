@@ -103,7 +103,7 @@ GitHub:
 https://github.com/Isack2022
 
 Projeto Front-end:
-https://github.com/Isack2022/Pizzaria-Imperio
+https://cristianticc.github.io/Empresa-de-Pizza/
 
 Projeto API:
 https://github.com/Isack2022/Node-Pizzaria
