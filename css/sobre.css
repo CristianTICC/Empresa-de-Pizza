@@ -1,0 +1,138 @@
+/* Container Geral */
+.sobre-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+/* Banner de Entrada */
+.sobre-hero {
+    text-align: center;
+    margin-bottom: 60px;
+    background: linear-gradient(135deg, #ffc107, #ff1a1a);
+    padding: 60px 20px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.sobre-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.sobre-hero p {
+    font-size: 1.2rem;
+    max-width: 60px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Bloco História */
+.sobre-bloco {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 70px;
+}
+
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-texto h2 {
+    font-size: 2.2rem;
+    color: #ff1a1a;
+    margin-bottom: 20px;
+}
+
+.sobre-texto p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.sobre-imagem {
+    flex: 1;
+    text-align: center;
+}
+
+.sobre-imagem img {
+    max-width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.sobre-imagem img:hover {
+    transform: scale(1.03);
+}
+
+/* Grid de Valores e Pilares */
+.sobre-valores {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.sobre-valores h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.valores-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.valor-card {
+    background-color: #fff;
+    padding: 35px 25px;
+    border-radius: 12px;
+    flex: 1;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border-top: 5px solid #ffc107;
+    transition: translateY 0.3s ease;
+}
+
+.valor-card:hover {
+    transform: translateY(-5px);
+}
+
+.valor-card i {
+    font-size: 2.5rem;
+    color: #ff1a1a;
+    margin-bottom: 15px;
+}
+
+.valor-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.valor-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 768px) {
+    .sobre-bloco {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .valores-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .sobre-hero h1 {
+        font-size: 2.2rem;
+    }
+}
