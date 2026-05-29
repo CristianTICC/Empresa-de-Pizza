@@ -156,3 +156,10 @@ main{
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
+/* Força o vídeo a respeitar o tamanho da div pai e não estourar a tela */
+.secao-3 .midia video {
+    width: 100%;
+    max-width: 500px; /* Altere esse número se quiser ele menor ou maior */
+    height: auto;
+    border-radius: 10px; /* Para deixar a borda arredondada igual estava antes */
+}
